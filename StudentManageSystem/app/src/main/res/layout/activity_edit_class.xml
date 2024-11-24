@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtClassLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffcc00"
+        android:gravity="center"
+        android:text="Sửa thông tin lớp học:"
+        android:textSize="30sp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="400dp"
+        android:layout_height="93dp"
+        android:layout_below="@+id/txtClassLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="17dp"
+        android:stretchColumns="">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCodeClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã lớp:" />
+
+            <EditText
+                android:id="@+id/edtEditClassCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10">
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtClassName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên lớp:" />
+
+            <EditText
+                android:id="@+id/edtEditClassName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtClassNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="Sỉ số:" />
+
+            <EditText
+                android:id="@+id/edtEditClassNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="0" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0sp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tableLayout1">
+
+        <Button
+            android:id="@+id/btnSaveInsertClass"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnClearInsertClass"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44"
+            android:text="Xóa trắng" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCloseInsertClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:text="Đóng" />
+</RelativeLayout>

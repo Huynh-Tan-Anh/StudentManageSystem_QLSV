@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentManageSystem"
+        tools:targetApi="31">
+        <activity android:name=".ActionBarActivity"></activity>
+
+
+        <activity android:name=".InsertEditActivity"></activity>
+
+        <activity android:name=".Login"></activity>
+        <activity android:name=".InsertClassActivity"></activity>
+        <activity android:name=".EditClassActivity"></activity>
+        <activity android:name=".MyAdapterClass"></activity>
+        <activity android:name=".Room"></activity>
+
+        <activity android:name=".StudentListActivity"></activity>
+        <activity android:name=".InsertStudentActivity"></activity>
+        <activity android:name=".EditStudentActivity"></activity>
+        <activity android:name=".MyAdapterStudent"></activity>
+        <activity android:name=".Student"></activity>
+
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Notify"></activity>
+
+        <activity
+            android:name=".ClassList"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

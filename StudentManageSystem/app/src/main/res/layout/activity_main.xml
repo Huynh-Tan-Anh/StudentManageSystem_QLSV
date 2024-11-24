@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:backgroundTint="#47FAFAFA">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:gravity="center"
+        android:text="STUDENT MANAGE SYSTEM"
+        android:textColor="#F44336"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:id="@+id/lnbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnOpenClass"
+            android:layout_width="376dp"
+            android:layout_height="106dp"
+            android:backgroundTint="#2186D7"
+            android:shadowColor="#2A2727"
+            android:shadowDx="20"
+            android:shadowDy="20"
+            android:shadowRadius="20 "
+            android:text="Quản lý lớp học"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnOpenStudent"
+            android:layout_width="377dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2186D7"
+            android:shadowColor="#383434"
+            android:shadowDx="20"
+            android:shadowDy="20"
+            android:shadowRadius="20"
+            android:text="Quản lý sinh viên"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnExitApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="#D91010"
+        android:text="Thoát" />
+</RelativeLayout>
